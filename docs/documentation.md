@@ -25,6 +25,7 @@ TODO: description
 | FPGA | UPDUINO V3.0 | MicroPs Kit | N/A | 1 | N/A |
 | MCU | STM32L432KC | MicroPs Kit | N/A | 1 | N/A |
 | 1/2" Plywood | N/A | Wood Shop | N/A | 1 | N/A |
-| Screws | N/A | Stockroom | N/A | 1 | N/A |
+| 10mm M3 Screw | N/A | Stockroom | N/A | 4 | N/A |
+| ? Screw | N/A | Stockroom | N/A | ? | N/A |
 
 **Total cost: $39.70**
