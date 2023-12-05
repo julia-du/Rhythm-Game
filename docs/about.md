@@ -20,9 +20,9 @@ TODO: copy&paste description
 | ---- | ----------- | ------ | ---------- | -------- | ---- |
 | Piezo Sensor | 1740 | Adafruit | $0.95 | 6 | [link](https://www.adafruit.com/product/1740) |
 | 32 x 32 LED Matrix Display | 2026 | Adafruit | $34.95 | 1 | [link](https://www.adafruit.com/product/2026) |
-| Speaker | CT12E-05T204-8 | Stockroom | N/A | 1 | N/A |
+| 8Ω Speaker | SM231508-1 | Stockroom | N/A | 1 | N/A |
 | Low Voltage Audio Power Amp | LM386 | Stockroom | N/A | 1 | N/A |
-| Single Supply CMOS Op Amp | MCP6002 | Stockroom | N/A | 1 | N/A |
+| Single Supply CMOS Op Amp | MCP601 | Stockroom | N/A | 1 | N/A |
 | FPGA | UPDUINO V3.0 | MicroPs Kit | N/A | 1 | N/A |
 | MCU | STM32L432KC | MicroPs Kit | N/A | 1 | N/A |
 | 1/2" Plywood | N/A | Wood Shop | N/A | 1 | N/A |

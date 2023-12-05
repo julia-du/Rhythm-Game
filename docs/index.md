@@ -7,6 +7,7 @@ exclude: true
 
 # Project Abstract
 <!-- The project abstract should be a short (< 200 words) summary of what your project does -->
+TODO: add
 
 <div style="text-align: left">
   <img src="./assets/img/Logo.png" alt="logo" width="100" />
@@ -15,7 +16,11 @@ exclude: true
 ### Project Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y5Qfcjh6fBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Project Motivation
 <!-- In the project motivation explain the background behind why you chose this project. -->
+TODO: arcade game
 
-# System Block Diagram
+# Overall System Design
+TODO: insert block diagram
+TODO: add brief explanation

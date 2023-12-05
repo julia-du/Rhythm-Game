@@ -3,7 +3,10 @@ layout: page
 title: FPGA Design
 ---
 
-# Overall System
+# New Hardware
+TODO: talk about LED display
+
+# Overall FPGA System
 TODO: block diagram here
 TODO: diff between display_matrix and display_interface
 TODO: internal clock vs. external one
