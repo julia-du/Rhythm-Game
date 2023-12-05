@@ -6,7 +6,7 @@ title: FPGA Design
 # New Hardware
 TODO: talk about LED display
 
-# Overall FPGA System
+# FPGA System Design
 TODO: block diagram here
 TODO: diff between display_matrix and display_interface
 TODO: internal clock vs. external one
