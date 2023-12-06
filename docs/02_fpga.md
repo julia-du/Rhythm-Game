@@ -7,7 +7,7 @@ permalink: /fpga
 # New Hardware
 The new hardware used was Adafruit's 32 x 32 LED matrix display. Unlike previous LED displays we have worked with, which include input pins for each row/column or segment, this display utilizes 13 GPIO pins to control 3072 different LEDs. The 13 pins allow for selecting specific rows of the display and clocking in RGB values for each LED in the row.
 
-Two stands were 3D printed and attached to the display with 10mm M3 screws. The CAD for the stands are available ![here](https://github.com/julia-du/Rhythm-Game/tree/main/src/CAD).
+Two stands were 3D printed and attached to the display with 10mm M3 screws. The CAD for the stands are available [here](https://github.com/julia-du/Rhythm-Game/tree/main/src/CAD).
 
 # FPGA System Design
 ![FPGABlockDiagram](./assets/schematics/FPGABlockDiagram.png)
