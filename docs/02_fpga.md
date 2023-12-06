@@ -12,8 +12,6 @@ Two stands were 3D printed and attached to the display with 10mm M3 screws. The 
 # FPGA System Design
 ![FPGABlockDiagram](./assets/schematics/FPGABlockDiagram.png)
 There are two main modules: `display_matrix` and `display_interface`. `display_matrix` uses the inputs from the microcontroller to determine what needs to be shown on the display, and `display_interface` communicates that information to the display itself. 
-TODO: diff between display_matrix and display_interface
-TODO: internal clock vs. external one
 
 ## display_matrix
 `display_matrix` gets the following inputs from the microcontroller:
@@ -40,6 +38,6 @@ This module is mostly a generic interface except for the colors of the hits and 
 
 # Sources
 Since there was no datasheet available for the display, the following sources were used to determine how it worked:
-1. https://learn.adafruit.com/assets/23768
-2. https://cdn-learn.adafruit.com/downloads/pdf/32x16-32x32-rgb-led-matrix.pdf
-3. https://uselessrobots.com/2020/12/28/adafruit-led-matrix-control-with-verilog-1/
+1. [LED Matrix Display Pinout (Adafruit)](https://learn.adafruit.com/assets/23768)
+2. [RGB LED Matrix Basics by Phillip Burgess (Adafruit)](https://cdn-learn.adafruit.com/downloads/pdf/32x16-32x32-rgb-led-matrix.pdf)
+3. [Adafruit LED Matrix Vontrol w/ Verilog by Joseph Primmer](https://uselessrobots.com/2020/12/28/adafruit-led-matrix-control-with-verilog-1/)
