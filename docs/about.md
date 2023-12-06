@@ -11,6 +11,6 @@ TODO: link yo shit
 
 
 # Julia Du
-[GitHub](link)
+[GitHub](https://github.com/julia-du)
 
 
