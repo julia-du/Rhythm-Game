@@ -6,11 +6,13 @@ title: About
 TODO: short bios
 
 # Allison Tsai
-[LinkedIn](link)
-TODO: link yo shit
-
+Links: [LinkedIn](link)
 
 # Julia Du
-[GitHub](https://github.com/julia-du)
+Links: [GitHub](https://github.com/julia-du)
+
+Senior engineering student at Harvey Mudd. 
+
+Circuits <3 <3
 
 
