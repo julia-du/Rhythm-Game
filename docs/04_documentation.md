@@ -12,6 +12,7 @@ The source code for the project is located in the GitHub repository [here](https
 TODO: copy&paste description
 
 # Bill of Materials
+
 | Part | Part Number | Vendor | Unit Price | Quantity | Link |
 | ---- | ----------- | ------ | ---------- | -------- | ---- |
 | Piezo Sensor | 1740 | Adafruit | $0.95 | 6 | [link](https://www.adafruit.com/product/1740) |

@@ -1,14 +1,14 @@
 # Configuration Options
-title: "E155 MicroPs Final Project: Rhythm Game"
+title: "Rhythm Game"
 author: "Julia Du and Allison Tsai"
 theme: minima
 
 header-pages:
-  - mcu.html
-  - fpga.html
-  - results.html
-  - documentation.html
-  - about.html
+  - 01_mcu
+  - 02_fpga
+  - 03_results
+  - 04_documentation
+  - 05_about
 
 # Github Pages settings that cannot be changed
 # lsi: false

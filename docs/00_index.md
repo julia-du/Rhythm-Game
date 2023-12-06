@@ -5,6 +5,12 @@ permalink: /
 exclude: true
 ---
 
+E155 MicroPs Final Project: Rhythm Game
+
+By Julia Du and Allison Tsai
+
+December 8, 2023
+
 # Project Abstract
 TODO: video/picture
 This project implements a drumming rhythm game using a microcontroller and FPGA that interface with piezo sensors, a speaker, and an 32 x 32 LED matrix display. Players must listen to the music and watch the beats scrolling down the display in order to time their hits on the two drums (left and right) correctly. There are three rounds, and each successive round is faster than the previous. If the user passes all three rounds (i.e. hit at least TODO% of the notes), they win.
