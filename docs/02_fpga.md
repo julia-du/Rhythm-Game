@@ -1,6 +1,7 @@
 ---
 layout: page
 title: FPGA Design
+permalink: /fpga
 ---
 
 # New Hardware

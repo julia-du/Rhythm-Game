@@ -4,11 +4,11 @@ author: "Julia Du and Allison Tsai"
 theme: minima
 
 header-pages:
-  - mcu.md
-  - fpga.md
-  - documentation.md
-  - results.md
-  - about.md
+  - mcu.html
+  - fpga.html
+  - results.html
+  - documentation.html
+  - about.html
 
 # Github Pages settings that cannot be changed
 # lsi: false

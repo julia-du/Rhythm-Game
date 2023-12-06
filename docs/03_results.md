@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Results
+permalink: /results
 ---
 
 TODO: insert pictures/videos here
