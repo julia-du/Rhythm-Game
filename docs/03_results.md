@@ -4,8 +4,8 @@ title: Results
 permalink: /results
 ---
 
-![win_demo](./assets/vid/win_demo.gif)
-![game-over_demo](./assets/vid/game-over_demo.gif)
+![win_demo](./assets/vid/win_demo.gif) ![game-over_demo](./assets/vid/game-over_demo.gif)
+
 
 # Results
 
