@@ -7,7 +7,9 @@ permalink: /about
 TODO: short bios
 
 # Allison Tsai
-Links: [LinkedIn](link)
+Links: [LinkedIn](https://www.linkedin.com/in/allison-tsai-08d11t/)
+
+Senior mechanical/electrical engineering student at Harvey Mudd. Medical devices are cool •⏑•
 
 # Julia Du
 Links: [GitHub](https://github.com/julia-du)
