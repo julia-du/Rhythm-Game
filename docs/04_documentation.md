@@ -4,16 +4,16 @@ title: Documentation
 permalink: /docs
 ---
 
-# Schematic
+## Schematic
 
 ![Schematic](./assets/schematics/Schematic.png)
 
-# Source Code Overview
+## Source Code Overview
 
 The source code for the project is located in the GitHub repository [here](https://github.com/julia-du/Rhythm-Game/tree/main/src).
 TODO: copy&paste description
 
-# Bill of Materials
+## Bill of Materials
 
 | Part | Part Number | Vendor | Unit Price | Quantity | Link |
 | ---- | ----------- | ------ | ---------- | -------- | ---- |

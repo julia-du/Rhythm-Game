@@ -18,4 +18,4 @@ Senior engineering student at Harvey Mudd. Circuits <3 <3.
 
 # Acknowledgement
 
-We would like to thank our beta testers Cole, Lilly, Chris, Hannah, and Jose for testing our game!
+We would like to thank our beta testers, Cole, Lilly, Chris, Hannah, and Jose, for testing our game!
