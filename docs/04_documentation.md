@@ -34,6 +34,7 @@ The source code for the project is located in the GitHub repository [here](https
 | FPGA | UPDUINO V3.0 | MicroPs Kit | N/A | 1 | N/A |
 | MCU | STM32L432KC | MicroPs Kit | N/A | 1 | N/A |
 | 1/2" Plywood | N/A | Wood Shop | N/A | 1 | N/A |
+| 1/8" Plywood | N/A | Makerspace | N/A | 1 | N/A |
 | 10 mm M3 Screw | N/A | Stockroom | N/A | 4 | N/A |
 | 10-24 Screw | N/A | Stockroom | N/A | 6 | N/A |
 | 10-24 Hex Nut | N/A | Stockroom | N/A | 6 | N/A |
