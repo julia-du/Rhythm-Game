@@ -13,7 +13,8 @@ December 8, 2023
 
 # Project Abstract
 TODO: video/picture
-This project implements a drumming rhythm game using a microcontroller and FPGA that interface with piezo sensors, a speaker, and an 32 x 32 LED matrix display. Players must listen to the music and watch the beats scrolling down the display in order to time their hits on the two drums (left and right) correctly. There are three rounds, and each successive round is faster than the previous. If the user passes all three rounds (i.e. hit at least TODO% of the notes), they win.
+
+This project implements a drumming rhythm game using a microcontroller and FPGA that interface with piezo sensors, a speaker, and an 32 x 32 LED matrix display. Players must listen to the music and watch the beats scrolling down the display in order to time their hits on the two drums (left and right) correctly. There are three rounds, and each successive round is faster than the previous. If the user passes all three rounds (i.e. hit at least 50% of the notes), they win.
 
 # Project Motivation
 This project was inspired by the MicroPs speaker lab and MicroPs game projects from previous years. In order to combine music and gaming, we decided to create a rhythm game. This game was mostly modeled after the Taiko arcade game which require players to hit a drum; using a drum input would allow us to work with a new type of sensor: piezos. In addition, the visual display of our game was inspired by DDR, with each beat in its own channel scrolling vertically on the screen. 

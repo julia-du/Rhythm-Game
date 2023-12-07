@@ -24,6 +24,6 @@ TODO: copy&paste description
 | MCU | STM32L432KC | MicroPs Kit | N/A | 1 | N/A |
 | 1/2" Plywood | N/A | Wood Shop | N/A | 1 | N/A |
 | 10 mm M3 Screw | N/A | Stockroom | N/A | 4 | N/A |
-| ? Screw | N/A | Stockroom | N/A | 6 | N/A |
+| 10-24 Screw | N/A | Stockroom | N/A | 6 | N/A |
 
 **Total cost: $39.70**
