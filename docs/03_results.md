@@ -13,7 +13,7 @@ All of the specs we noted in our project proposal were met. The MCU correctly pl
 
 # Future Work
 
-## MCU
+### MCU
 
 In the current design, the piezo voltage is being regulated by a comparator circuit because the voltage can potentially spike up to 16V and break the MCU pin. While this circuit setup works fine, tuning the drum sensitivity must be done externally through hardware adjustments. To facilitate the tuning process, the comparator circuit can be changed to a buffer with 0 to +3.3V rails. This would allow sensitivity adjustments to be made through software instead of hardware. 
 
