@@ -12,6 +12,7 @@ permalink: /results
 All of the specs we noted in our project proposal were met. The MCU correctly plays the notes in tune, sends the beats to the FPGA on time, and scores the hits from the user. This is consistent even when the length of each quarter note is only 1.13 seconds. The FPGA correctly displays the beats scrolling down, hits and misses, the round number, and the losing or winning screen without any visible flickering or bleeding. 
 
 # Future Work
+         
 
 ### MCU
 
@@ -20,7 +21,7 @@ In the current design, the piezo voltage is being regulated by a comparator circ
 Additionally, there is small bug related to the user input. If the user were to barely hit the note on time, the MCU will register it as a hit and miss. While this doesn't affect the user score, visually, the display will quickly switch between the green circle and the red x. This issue may be caused by the looping logic. During testing, the code would print a large number of miss statements instead of one to the debug terminal. This could mean that the MCU is checking for misses more than once per note.   
 
 
-## FPGA
+### FPGA
 
 Currently, the FPGA interface to the 32 x 32 LED matrix display is mostly generic except for the colors of hits and misses. The rest of the display is only white or off. To allow for more customizable colors, the interface can be expanded to deal with RGB data. This would triple the amount of data the FPGA must deal with, which will likely require using the FPGA memory rather than using 1024-bit buses to the interface module.
 
