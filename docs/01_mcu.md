@@ -13,7 +13,7 @@ The two piezo sensors were attached to back of two drum pads. These pads were la
 # MCU System Design
 
 ![MCUBlockDiagram](./assets/schematics/MCUBlockDiagram.png)
-The MCU uses three peripherals: `ADC`, `DMA`, and `TIM`. The `ADC` peripheral is responsible for converting the analog voltage from the piezo sensors to DC voltage. The `DMA` peripheral is responsible for data transfers between the `ADC` registers and a temporary memory address. The `TIM` peripheral is responsible for generating the beat clock, the frequency waveform that goes to the speaker, and a duration timer. (See FPGA section for the definitions of all the outputs going from the MCU to the FPGA)
+The MCU uses three peripherals: `ADC`, `DMA`, and `TIM`. The `ADC` peripheral is responsible for converting the analog voltage from the piezo sensors to digital. The `DMA` peripheral is responsible for data transfers between the `ADC` registers and a temporary memory address. The `TIM` peripheral is responsible for generating the beat clock, the frequency waveform that goes to the speaker, and a duration timer. (See FPGA section for the definitions of all the outputs going from the MCU to the FPGA)
 
 ## ADC and DMA
 
