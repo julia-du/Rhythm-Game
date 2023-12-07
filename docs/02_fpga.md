@@ -14,6 +14,7 @@ Two stands were 3D printed and attached to the display with 10mm M3 screws. The 
 There are two main modules: `display_matrix` and `display_interface`. `display_matrix` uses the inputs from the microcontroller to determine what needs to be shown on the display, and `display_interface` communicates that information to the display itself. 
 
 ## display_matrix
+
 `display_matrix` gets the following inputs from the microcontroller:
 - `beatCLK`: sets the speed of the beats scrolling down the display. For each cycle of `beatCLK`, a beat moves down one pixel. 
 - `beatL` and `beatR`: determine when a beat on the left/right side of the display should start scrolling down from the top.
@@ -26,6 +27,7 @@ The `beats` module is a FSM that keeps track of the position of beats on the dis
 The `display_play` and `display_end` modules contain combinational logic that outputs a 32 x 32 matrix that represents the state of the display during play and at the end of the game, respectively. A multiplexer chooses which of the two is sent to `display_interface`. Note that the 32 x 32 matrix doesn't contain any color data, only if a pixel is on or off. 
 
 ## display_interface
+
 `display_interface` uses the FPGA's internal oscillator set to 24 MHz (`displayCLK`) and a 14-bit counter. For each cycle of the counter, the following occurs:
 1. In 1 clock cycle, the module changes which rows it is addressing to. The address is 4 bits and is controlled by the `A`, `B`, `C`, and `D` outputs. An address of 0000 refers to the 1st and 17th row, an address of 0001 refers to the 2nd and 18th row, etc. 
 2. In 32 clock cycles, the RGB data for the 32 pixels each row are clocked in with the `CLK` signal. `R1`, `G1`, and `B1` represents the data for the first of the two rows, and `R2`, `G2`, and `B2` represents the data for the second of the two rows. The RGB data are updated on the negative edge of `CLK`.

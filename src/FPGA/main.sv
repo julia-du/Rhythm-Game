@@ -7,20 +7,20 @@
     Top-level module for the FPGA.
    
     Inputs:  beatCLK     - clock signal that determines the rate at which beats scroll down the display
-	         beatL/R     - determines when a beat should start scrolling down on the left/right side
+             beatL/R     - determines when a beat should start scrolling down on the left/right side
              hitL/R      - determines when the screen should show a hit on the left/right
              missL/R     - determines when the screen should show a miss on the left/right
-		     gameover    - determines if the game is over or not
-		     round[1:0]  - round number
-			               0 = round 1, 1 = round 2, 2 = round 3, 3 = win
-	Outputs: R/G/B1 - red/green/blue values for the 1st row (out of the 2 rows being addressed)
-	         R/G/B2 - red/green/blue values for the 2nd row (out of the 2 rows being addressed)
-			 CLK    - clock signal to send R/G/B data for the 2 rows to the display
-			 LAT    - latch signal that marks the end of the RGB data for the 2 rows
-			 OE     - active low output enable
-			          set to 1 to turn off the display
-			 ABCD   - address of the rows being addressed
-			          0000 = rows 1 and 16, 1111 = rows 17 and 32     
+             gameover    - determines if the game is over or not
+             round[1:0]  - round number
+                           0 = round 1, 1 = round 2, 2 = round 3, 3 = win
+    Outputs: R/G/B1 - red/green/blue values for the 1st row (out of the 2 rows being addressed)
+             R/G/B2 - red/green/blue values for the 2nd row (out of the 2 rows being addressed)
+             CLK    - clock signal to send R/G/B data for the 2 rows to the display
+             LAT    - latch signal that marks the end of the RGB data for the 2 rows
+             OE     - active low output enable
+                      set to 1 to turn off the display
+             ABCD   - address of the rows being addressed
+                      0000 = rows 1 and 16, 1111 = rows 17 and 32     
 */
 module main(input  logic beatCLK, beatL, beatR, hitL, hitR, missL, missR, gameover,
             input  logic [1:0] round,
@@ -44,9 +44,9 @@ endmodule
 /*  display_matrix
     Keeps track of the game state and outputs the correct display matrix.
 	
-	Inputs: beatCLK, beatL/R, hitL/R, missL/R, gameover, round[1:0]
-	Output: matrix[31:0][31:0] - represents which LEDs on the 32x32 screen should be on
-	        hitL_long, hitR_long, missL_long, missR_long - essentially the same as hitL, hitR, missL, and missR, but holds each of them for a set amount of time
+    Inputs: beatCLK, beatL/R, hitL/R, missL/R, gameover, round[1:0]
+    Output: matrix[31:0][31:0] - represents which LEDs on the 32x32 screen should be on
+            hitL_long, hitR_long, missL_long, missR_long - essentially the same as hitL, hitR, missL, and missR, but holds each of them for a set amount of time
 */
 module display_matrix(input logic int_osc, beatCLK, beatL, beatR, hitL, hitR, missL, missR, gameover,
                       input logic [1:0] round,
@@ -73,11 +73,11 @@ module display_matrix(input logic int_osc, beatCLK, beatL, beatR, hitL, hitR, mi
 endmodule
 
 /*  hits
-	FSM to make hits and misses linger on the screen for longer.
+    FSM to make hits and misses linger on the screen for longer.
 
-	Inputs:  displayCLK - a 24 MHz clock signal
-	         hitL, hitR, missL, missR
-	Outputs: hitL_long, hitR_long, missL_long, missR_long
+    Inputs:  displayCLK - a 24 MHz clock signal
+             hitL, hitR, missL, missR
+    Outputs: hitL_long, hitR_long, missL_long, missR_long
 */
 module hits (input logic displayCLK, hitL, hitR, missL, missR,
 			 output logic hitL_long, hitR_long, missL_long, missR_long);
@@ -116,11 +116,11 @@ module hits (input logic displayCLK, hitL, hitR, missL, missR,
 endmodule
 
 /*  beats
-	FSM to keep track of where beats should be displayed on the screen.
+    FSM to keep track of where beats should be displayed on the screen.
 
-	Inputs:  beatCLK, beatL, beatR
-	Outputs: beatL/R_displayed[31:0] - determines where beats should be displayed on the left/right side
-	                                   32 available spots on each side
+    Inputs:  beatCLK, beatL, beatR
+    Outputs: beatL/R_displayed[31:0] - determines where beats should be displayed on the left/right side
+                                       32 available spots on each side
 */
 module beats(input  logic beatCLK, beatL, beatR,
              output logic [31:0] beatL_displayed, beatR_displayed);
@@ -146,10 +146,10 @@ module beats(input  logic beatCLK, beatL, beatR,
 endmodule
 
 /*  display_play
-	Outputs the display matrix when playing a round.
+    Outputs the display matrix when playing a round.
     
-	Inputs: beatL/R_displayed[31:0], hitL/R, missL/R, round[1:0]
-	Output: matrix[31:0][31:0]
+    Inputs: beatL/R_displayed[31:0], hitL/R, missL/R, round[1:0]
+    Output: matrix[31:0][31:0]
 */
 module display_play(input  logic [31:0] beatL_displayed, beatR_displayed, 
                     input  logic hitL, hitR, missL, missR,
@@ -196,7 +196,6 @@ module display_play(input  logic [31:0] beatL_displayed, beatR_displayed,
 		end
 	end
 
-	
 	// Assign pixels on the screen
 	assign matrix[0] = 0;
 	assign matrix[1] = round_num[0] | left[0];
@@ -234,10 +233,10 @@ module display_play(input  logic [31:0] beatL_displayed, beatR_displayed,
 endmodule
 
 /*  display_end
-	Outputs the display matrix when the game is over.
+    Outputs the display matrix when the game is over.
 
-	Inputs: gamemover, round[1:0]
-	Output: matrix[31:0][31:0]
+    Inputs: gamemover, round[1:0]
+    Output: matrix[31:0][31:0]
 */
 module display_end(input  logic gameover,
                    input  logic [1:0] round,
@@ -268,9 +267,9 @@ endmodule
 /*  display_interface
     Sends the correct inputs to the 32x32 matrix to display the matrix.
 
-	Inputs:  hitL/R, missL/R matrix[31:0][31:0]
-	         displayCLK - a 24 MHz clock signal
-	Output:  R/G/B1, R/G/B2, CLK, LAT, OE, ABCD[3:0]
+    Inputs:  hitL/R, missL/R matrix[31:0][31:0]
+             displayCLK - a 24 MHz clock signal
+    Output:  R/G/B1, R/G/B2, CLK, LAT, OE, ABCD[3:0]
 */
 module display_interface(input logic displayCLK, hitL, hitR, missL, missR,
                          input logic [31:0] matrix [31:0],
