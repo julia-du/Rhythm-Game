@@ -41,3 +41,4 @@ To implement rounds and increasing speeds, the basic game logic is nested in ano
 # Sources
 1. [Resetting resistor discussion](https://electronics.stackexchange.com/questions/591824/buzzer-differences-and-configurations)
 2. [DIY Taiko Controller](https://www.youtube.com/watch?v=iDH8DRCk5Zs)
+3. [Audio Amplifier Datasheet](https://www.ti.com/lit/ds/symlink/lm386.pdf)
