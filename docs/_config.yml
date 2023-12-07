@@ -1,18 +1,19 @@
 # Configuration Options
-title: "FA2023 E155 MicroPs Final Project: Rhythm Game"
-author: "Julia Du, Allison Tsai"
+title: "Rhythm Game"
+author: "Julia Du and Allison Tsai"
 theme: minima
 
 header-pages:
-  - mcu.html
-  - fpga.html
-  - documentation.html
-
+  - 01_mcu
+  - 02_fpga
+  - 03_results
+  - 04_documentation
+  - 05_about
 
 # Github Pages settings that cannot be changed
 # lsi: false
 # safe: true
-# source: [your repo's top level directory]
+# source: https://github.com/julia-du/Rhythm-Game
 # incremental: false
 # highlighter: rouge
 # gist:

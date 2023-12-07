@@ -288,7 +288,7 @@ module display_interface(input logic displayCLK, hitL, hitR, missL, missR,
 		counter <= counter + 1;
 		ABCD_state <= next_ABCD_state;
 	end
-	always_ff @(negedge displayCLK) begin // Update the RGB values on the negetive clock edge
+	always_ff @(negedge displayCLK) begin // Update the RGB values on the negative clock edge
 		R1_state <= next_R1_state;
 		R2_state <= next_R2_state;
 		G1_state <= next_G1_state;
@@ -311,7 +311,7 @@ module display_interface(input logic displayCLK, hitL, hitR, missL, missR,
 				next_G2_state = matrix[ABCD_state+16][31-(counter-OFFSET+1)];
 				next_B2_state = matrix[ABCD_state+16][31-(counter-OFFSET+1)];
 			end
-			// Sets left-side hits and misses to green and red, respectively
+			// Sets right-side hits and misses to green and red, respectively
 			else if((ABCD_state >= 10) && (ABCD_state <= 14) && (counter >= OFFSET+25) && (counter <= OFFSET+29)) begin
 				next_R1_state = matrix[ABCD_state][31-(counter-OFFSET+1)];
 				next_G1_state = matrix[ABCD_state][31-(counter-OFFSET+1)];
