@@ -12,7 +12,7 @@ By Julia Du and Allison Tsai
 December 8, 2023
 
 # Project Abstract
-<iframe width="560" height="315" src="https://youtu.be/-NsTOWbOhzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/-NsTOWbOhzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 *Note: in the video, some pixels appear to be pulsing at certain times; however, this is only visible on camera and not in real life.*
 
 This project implements a drumming rhythm game using a microcontroller and FPGA that interface with piezo sensors, a speaker, and an 32 x 32 LED matrix display. Players must listen to the music and watch the beats scrolling down the display in order to time their hits on the two drums (left and right) correctly. There are three rounds, and each successive round is faster than the previous. If the user passes all three rounds (i.e. hit at least 50% of the notes), they win.
