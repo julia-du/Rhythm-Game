@@ -8,4 +8,5 @@ This folder contains the source code for the project.
     - LED-Display-Stand.sldprt/.stl: CAD of stand used for the LED display; 2 of these were 3D printed and attached to the display with 10mm M3 screws
     - Drum.sldprt/.x_t: CAD of the mechanical design of the drum
 - MCU
-    - TODO: add C code
+    - main.c: C code for MCU
+    - lib files: source and header files for used peripherals and the beatmap

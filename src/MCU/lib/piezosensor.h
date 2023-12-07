@@ -1,0 +1,17 @@
+// PIEZOSENSOR.h
+// Allison Tsai
+// aztsai@hmc.edu
+// 12/7/2023
+// Header for piezo sensor functions
+
+#define PIEZO_RIGHT PA9
+#define PIEZO_LEFT PB0
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Function prototypes
+///////////////////////////////////////////////////////////////////////////////
+
+void configurePiezoSensor();
+void readPiezoSensor();
+
